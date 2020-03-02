@@ -1,0 +1,6 @@
+venv
+db.sqlite3
+.idea
+contas/migrations
+contas/__init__.py
+contas/__pycache__/
