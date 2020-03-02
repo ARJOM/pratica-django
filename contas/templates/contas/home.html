@@ -10,6 +10,8 @@
     {% for transacao in trasacoes %}
         <li>{{ transacao.descricao }} - {{ transacao.data }} - {{ transacao.valor }} - {{ transacao.categoria }}</li>
     {% endfor %}
+
+    <a href="{% url 'new' %}">Novo</a>
 </ul>
 </body>
 </html>
