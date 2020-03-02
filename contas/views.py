@@ -30,4 +30,11 @@ def update(request, pk):
         form.save()
         return redirect('list')
     data['form'] = form
+    data['transacao'] = transacao
     return render(request, 'contas/update.html', data)
+
+
+def delete(request, pk):
+    transacao = Transacao.objects.get(pk=pk)
+    transacao.delete()
+    return redirect('list')
